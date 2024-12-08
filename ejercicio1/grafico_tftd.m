@@ -19,5 +19,6 @@ function grafico_tftd(X)
     grid on
 
     set(gcf, 'Units', 'Inches', 'Position', [1, 1, 12, 10]);
-    print(gcf, 'mi_figura.tex', '-dtikz');
+
+    print(gcf, 'figures/tftd', '-dpdfcrop','-bestfit');
 end
