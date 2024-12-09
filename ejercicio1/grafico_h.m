@@ -1,7 +1,7 @@
 function grafico_h (n, h, i)
     % subplot(2,1,1);
     stem(n, h, "filled", "markersize", 4);
-    % axis([-12 12 0 0.6]); % Ajusta los límites del eje X e Y manualmente
+    % axis([-12 12 0 0.6]);
     titulo = sprintf('Respuesta impulsional del sistema %d', i);
     y_label = sprintf('h_{%d}[n]', i);
     title(titulo);

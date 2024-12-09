@@ -21,15 +21,15 @@ delta (n == 0) = 1;
 
 % sistema 1
 h1 = sistema1(n, delta);
-%grafico_h(n, h1, 1);
+% grafico_h(n, h1, 1);
 H1 = tftd(h1, n);
-%grafico_H(H1, 1);
+% grafico_H(H1, 1);
 
 % sistema 2
 h2 = sistema2(n, delta);
-%grafico_h(n, h2, 2);
+% grafico_h(n, h2, 2);
 H2 = tftd(h2, n);
-%grafico_H(H2, 2);
+% grafico_H(H2, 2);
 
 % sistema 3
 h3 = sistema3(n, delta);
@@ -50,27 +50,23 @@ n = 0:100;
 % sistema 1
 y1 = sistema1(n, x);
 % grafico_senial_salida(n, y1, 1)
-% obtenemos la TFTD
 Y1 = tftd(y1, n);
 % grafico_tftd_sistema(Y1, 1);
 
 % sistema 2
 y2 = sistema2(n, x);
 %grafico_senial_salida(n, y2, 2)
-% obtenemos la TFTD
 Y2 = tftd(y2, n);
 % grafico_tftd_sistema(Y2, 2);
 
 % sistema 3
 y3 = sistema3(n, x);
 %grafico_senial_salida(n, y3, 3)
-% obtenemos la TFTD
 Y3 = tftd(y3, n);
 % grafico_tftd_sistema(Y3, 3);
 
 % sistema 4
 y4 = sistema4(n, x);
 % grafico_senial_salida(n, y4, 4)
-% obtenemos la TFTD
 Y4 = tftd(y4, n);
 % grafico_tftd_sistema(Y4, 4);
